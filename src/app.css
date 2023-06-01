@@ -1,0 +1,54 @@
+.board {
+  --spacing: 0.5rem;
+  width: clamp(15rem, 90vw, 20rem);
+  border-spacing: var(--spacing);
+  background-color: var(--primary-dark);
+  aspect-ratio: 1;
+  margin-bottom: 1.5rem;
+  outline: var(--spacing) solid var(--primary);
+  outline-offset: calc(var(--spacing) * -1);
+}
+
+.square {
+  --size: 33.33%;
+  background-color: var(--primary);
+  text-align: center;
+  width: var(--size);
+  height: var(--size);
+  padding: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.square[role='button'] {
+  cursor: pointer;
+}
+
+.x,
+.square[aria-label='X'] {
+  color: var(--black);
+}
+
+.o,
+.square[aria-label='O'] {
+  color: var(--white);
+}
+
+.square:focus-visible {
+  outline: var(--spacing) solid var(--white);
+  outline-offset: calc(var(--spacing) * -1);
+}
+
+.square > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.gameover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+}
