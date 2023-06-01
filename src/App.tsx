@@ -5,8 +5,6 @@ import Square, { SquareValue } from './components/Square';
 import GameOver, { Winner } from './components/GameOver';
 import './app.css';
 
-// screen.orientation.lock('landscape');
-
 function App() {
   const [squares, setSquares] = useState<SquareValue[]>(Array(9));
   const [player, setPlayer] = useState<keyof typeof Player>(Player.X);
