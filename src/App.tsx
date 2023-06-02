@@ -63,7 +63,9 @@ function App() {
         </tbody>
       </table>
 
-      <button onClick={onResetClick}>Reset Game</button>
+      <button className="reset" onClick={onResetClick}>
+        Reset Game
+      </button>
     </Fragment>
   );
 }

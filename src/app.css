@@ -4,7 +4,6 @@
   border-spacing: var(--spacing);
   background-color: var(--primary-dark);
   aspect-ratio: 1;
-  margin-bottom: 1.5rem;
   outline: var(--spacing) solid var(--primary);
   outline-offset: calc(var(--spacing) * -1);
 }
@@ -52,4 +51,13 @@
   align-items: center;
   background-color: var(--primary);
   text-transform: uppercase;
+}
+
+button.reset {
+  z-index: 99;
+  position: absolute;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  border-radius: 0;
+  right: 0.25rem;
 }
