@@ -32,6 +32,7 @@ function Square(props: SquareProps) {
     <td {...interactiveProps} className="square" aria-label={value}>
       {mount(value === Player.X, <XIcon />)}
       {mount(value === Player.O, <OIcon />)}
+      {mount(value === undefined, <svg viewBox="0 0 24 24" />)}
     </td>
   );
 }
