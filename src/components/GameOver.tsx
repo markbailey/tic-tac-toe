@@ -19,8 +19,8 @@ function GameOver({ winner }: GameOverProps) {
     createPortal(
       <div className="gameover">
         <div>
-          {mount(showX, <XIcon width={64} height={64} className="x" />)}
-          {mount(showO, <OIcon width={64} height={64} className="o" />)}
+          {mount(showX, <XIcon width={96} height={96} className="x" />)}
+          {mount(showO, <OIcon width={96} height={96} className="o" />)}
         </div>
 
         {mount(isDraw, <h1>Draw!</h1>)}
